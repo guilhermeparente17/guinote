@@ -1,0 +1,28 @@
+<div class="form">
+<%= form_for @doc do |form| %>
+
+<div class="row">
+	<div class="col-sm-8">
+		<div class="form-group">
+			<%= form.label :titulo %>
+			<%= form.text_field :titulo, class:"form-control"%>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-8">
+		<div class="form-group">
+			<%= form.label :conteudo %>
+			<%= form.text_area :conteudo, class:"form-control", rows:4%>
+		</div>
+	</div>
+</div>
+
+<%= form.submit texto_da_acao, class:"btn btn-primary"%> | 
+<%= link_to "voltar", docs_path, class:"btn btn-default" %>
+
+
+<% end %>
+
+</div>

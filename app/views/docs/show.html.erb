@@ -1,0 +1,19 @@
+
+
+
+
+<div class="container">
+	<div class="conteudo">
+
+		<h1 align="center"><%= @doc.titulo %></h1>
+		<p align="center"><%= @doc.conteudo %></p>
+		<div align="center">
+			<%= link_to "Voltar", docs_path , class:"btn btn-default"%> | 
+			<%= link_to "Editar", edit_doc_path(@doc), class:"btn btn-warning"%> | 
+			<%= link_to "Remover", doc_path(@doc),method: :delete, class:"btn btn-danger",
+			data: { confirm: "Voce tem certeza ?" } %>
+		</div>
+
+	</div>
+</div>
+<%= render "footer"%>

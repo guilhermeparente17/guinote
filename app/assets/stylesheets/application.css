@@ -1,0 +1,117 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body{
+ 	color: #4B0082;
+ 	background-color: #F8F8FF;
+ }
+.first{
+	
+	padding: 3em;
+	text-align: center;
+	padding-bottom: 15em;
+	padding-top: 10em;
+
+}
+
+.conteudo{
+	color: black;
+}
+
+.second{
+	background-color: #4B0082;
+	/* cor de fonte */
+	color: #A9A9A9; 
+	padding: 3em;
+	text-align: center;
+}
+
+.second a{
+	color: #A9A9A9;
+}
+
+.titulo-one{
+	font-size: 6em;
+}
+
+.form{
+	color: black;
+}
+
+.sub-titulo{
+	color: black;
+}
+
+.menu-item{
+	background-color: #4B0082;
+	color: white;
+	padding: 1em;
+	border-radius: 20px;
+	margin-bottom: 5em;
+
+}
+
+.menu-item a{
+	color: white;
+
+}
+
+footer{
+	background-color: #363636;
+	color: #696969;
+	padding: 0.1em;
+	bottom: 0;
+	text-align: center;
+	position: fixed;
+    width: 100%;
+    
+}
+
+footer a{
+	color: white;
+}
+
+.sobre{
+	background-color: #4B0082;
+	color: white;
+	padding: 2em;
+	
+}
+
+.sobre a{
+	color: white;
+}
+
+.sobre-dois{
+	background-color: #8A2BE2;
+	color: white;
+	padding: 2em;
+	padding-top: 
+	
+}
+
+.sobre,.sobre-dois,.sobre-tres{
+	border-radius: 30px;
+}
+
+.sobre-dois a {
+	color: white;
+}
+
+.sobre-tres{
+	background-color: red;
+}
+

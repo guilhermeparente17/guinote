@@ -1,0 +1,21 @@
+<div class="container">
+<h1>Documentos</h1>
+<%= link_to "Criar Documento", new_doc_path, class:"btn btn-primary" %>
+<br><br><br>
+
+<div class="">
+
+	<% @docs.each do |doc| %>
+		<header class="menu-item conteudo">
+			<h1><%= link_to doc.titulo, doc %></h1>
+			<p><%= time_ago_in_words(doc.created_at) %></p>
+			<p><%= truncate(doc.conteudo, length: 50) %></p>
+		</header>
+	<% end %>
+
+</div>
+
+
+
+</div>
+<%= render "footer"%>

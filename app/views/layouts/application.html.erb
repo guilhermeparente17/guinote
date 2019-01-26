@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guinote | Edite seus documentos com estilo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+       
+    
+
+        <%= nav_bar fixed: :top, brand: "Guinote",brand_link: root_path, id:"logo" do  %>
+            <%= menu_group do %>
+              <% if user_signed_in? %>
+                <%= menu_item "Meus Documentos", docs_path %>
+                <%= menu_item "Criar um Documento", new_doc_path %>
+                <%= menu_item "Sair", destroy_user_session_path, method: :delete %>
+              <% else %>
+                <%= menu_item "Entrar", new_user_session_path%>
+              <% end %>  
+            <% end %>
+               
+
+
+        <% end %>    
+       
+         <p class="notice"><%= notice %></p>
+         <p class="alert"><%= alert %></p>
+       
+
+  	
+    <%= yield %>
+
+    </div>
+  </body>
+  
+     
+ 
+</html>
